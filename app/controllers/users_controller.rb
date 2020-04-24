@@ -3,6 +3,6 @@ class UsersController < ApplicationController
     
     @currentTime = Time.now
   end
-  def addedituser
+  def addedituser()
   end
 end

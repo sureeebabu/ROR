@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_24_104417) do
+ActiveRecord::Schema.define(version: 2020_04_24_120148) do
 
-  create_table "usermaster", primary_key: "userID", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "userName", limit: 100, null: false
-    t.string "userEmail", limit: 50, null: false
-    t.string "userPassword", limit: 20, null: false
+  create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.decimal "price", precision: 10
+    t.text "short_description"
+    t.text "full_description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
