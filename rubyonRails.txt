@@ -1,0 +1,26 @@
+getting Started : https://guides.rubyonrails.org/getting_started.html
+
+To create Project      : rails new blog
+
+To Run Project 		   : rails server
+
+To generate controller : rails generate controller welcome index
+
+TO generate Model      : rails g model user name:string email:string
+
+rake db:migrate
+---------------------------------------------
+
+Clone from github
+
+1. bundle install
+2. yarn install
+
+---------------------------------------------
+CRUD operations
+https://assist-software.net/snippets/ruby-rails-crud-and-api-tutorial
+
+Git https://github.com/assist-software/ruby-on-rails-workshop
+
+---------------------------------------------
+rails webpacker:install
