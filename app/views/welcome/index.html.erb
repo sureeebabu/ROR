@@ -1,4 +1,13 @@
 <h1>Welcome#index</h1>
 
+<%= link_to "User Index", controller:"users", class: "btn btn-primary" %>
+<br>
+<%= link_to("Add Edit User", "/users/addedituser") %>
+<br>
+<%= link_to("Variable Add Edit User", @url) %>
+<br>
+<%= link_to "Learn More", {controller: "users", action: "addedituser"}, class: "btn btn-primary" %>
+<br>
+<br>
 <i class="fa fa-users"><i>
 <button class="btn btn-primary"  >Click me</button>
